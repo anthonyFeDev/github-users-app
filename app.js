@@ -1,9 +1,9 @@
-// Remove default form behavior
-const form = document.querySelector('form')
-
 document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('form')
+
   form.addEventListener('submit', function(event) {
     event.preventDefault()
-    alert('button pressed')
+    const userName = document.querySelector('input').value
+    alert(userName)
   })
 })
