@@ -1,6 +1,9 @@
 import axios from 'axios'
 // Github api url: https://api.github.com/users
 
+const card = createCard(response.data)
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('form')
 
