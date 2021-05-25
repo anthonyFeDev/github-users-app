@@ -3,6 +3,16 @@ import axios from 'axios'
 
 const card = createCard(response.data)
 
+function createCard(data) {
+  `
+  <div>
+  test
+  </div>
+  `
+}
+
+const searchResults = document.querySelector('.search-results')
+searchResults.insertAdjacentHTML('beforeend', card);
 
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('form')
