@@ -4,11 +4,9 @@ import axios from 'axios'
 const card = createCard(response.data)
 
 function createCard(data) {
-  `
-  <div>
-  test
-  </div>
-  `
+  `<div>
+    test
+  </div>`
 }
 
 const searchResults = document.querySelector('.search-results')
@@ -21,6 +19,5 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault()
     const userName = document.querySelector('input').value
     const response = await axios.get(`https://api.github.com/users/${userName}`)
-    console.log(response.data)
   })
 })
